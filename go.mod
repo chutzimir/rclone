@@ -1,4 +1,4 @@
-module github.com/rclone/rclone
+module github.com/chutzimir/rclone
 
 go 1.14
 
