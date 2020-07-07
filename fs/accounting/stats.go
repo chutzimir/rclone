@@ -299,7 +299,7 @@ func (s *StatsInfo) String() string {
 		}
 	}
 
-	_, _ = fmt.Fprintf(buf, "%s%10s / %s, %s, %s, ETA %s%s\n",
+	_, _ = fmt.Fprintf(buf, "%s%10s / %-9s, %s, %s, ETA %s%s\n",
 		dateString,
 		fs.SizeSuffix(s.bytes),
 		fs.SizeSuffix(totalSize).Unit("Bytes"),

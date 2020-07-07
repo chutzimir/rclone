@@ -445,7 +445,7 @@ func (acc *Account) String() string {
 		percentageDone = int(100 * float64(a) / float64(b))
 	}
 
-	return fmt.Sprintf("%*s:%3d%% /%s, %s/s, %s",
+	return fmt.Sprintf("%*s:%3d%% /%10s, %10s/s, %6s",
 		fs.Config.StatsFileNameLength,
 		shortenName(acc.name, fs.Config.StatsFileNameLength),
 		percentageDone,
